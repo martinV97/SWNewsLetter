@@ -23,7 +23,7 @@ var ArticleSchema = new Schema({
 		default: 'Nothing'
 	},
 	section:{
-		name:String,
+		type:String,
 		required: [true, 'Name Section to Article is required']
 	}
 });
