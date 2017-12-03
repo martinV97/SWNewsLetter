@@ -4,7 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
-mongoose.connect(MONGODB||'mongodb://localHost/newsLetter');
+mongoose.connect(process.env.MONGODB_URI||'mongodb://localHost/newsLetter');
 mongoose.Promise = global.Promise;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
