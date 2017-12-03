@@ -15,7 +15,7 @@ var ArticleSchema = new Schema({
 		required: [true, 'Abstract Article is required']
 	},
 	text:{
-		type:Boolean,
+		type:String,
 		required: [true, 'Text Article is required']
 	},
 	keywords:{
