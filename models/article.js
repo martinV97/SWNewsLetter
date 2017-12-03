@@ -7,7 +7,7 @@ var ArticleSchema = new Schema({
 		required: [true, 'Name Article User is required']
 	},
 	date:{
-		type:Date,
+		type:String,
 		required: [true, 'Date Article User is required']
 	},
 	abstract:{
