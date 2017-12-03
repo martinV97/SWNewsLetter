@@ -21,6 +21,10 @@ var ArticleSchema = new Schema({
 	keywords:{
 		type:String,
 		default: 'Nothing'
+	},
+	section:{
+		name:String,
+		required: [true, 'Name Section to Article is required']
 	}
 });
 
