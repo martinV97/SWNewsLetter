@@ -1,0 +1,16 @@
+{
+  "name": "periodico",
+  "version": "1.0.0",
+  "description": "Proyecto de Sw2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js"
+  },
+  "author": "Sw2",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "mongoose": "^4.13.6"
+  }
+}
