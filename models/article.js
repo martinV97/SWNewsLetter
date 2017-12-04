@@ -18,6 +18,10 @@ var ArticleSchema = new Schema({
 		type:String,
 		required: [true, 'Text Article is required']
 	},
+	image:{
+		type:String,
+		default: 'No image'
+	},
 	keywords:{
 		type:String,
 		default: 'Nothing'
