@@ -8,6 +8,8 @@ mongoose.connect(process.env.MONGODB_URI||'mongodb://localHost/newsLetter');
 mongoose.Promise = global.Promise;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json({limit: '50mb'}));
+app.use(bodyParser.urlencoded({limit: '50mb'}));
 app.use(routes);
 app.use(function(err, req, res, next){
 	console.log({error: err.message});
