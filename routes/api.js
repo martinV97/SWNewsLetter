@@ -13,6 +13,12 @@ router.get('/user', function(req, res, next) {
 	});
 });
 
+/*router.get('/user/:name', function(req, res, next) {
+	User.find({name: req.params.name}).then(function(users){
+		res.send(users);
+	});
+});*/
+
 router.get('/user/:id', function(req, res, next) {
 	User.findById(req.params.id).then(function(user){
 		res.send(user);
@@ -81,12 +87,17 @@ router.get('/article', function(req, res, next) {
 	});
 });
 
-router.get('/article/:id', function(req, res, next) {
+router.get('/article/:section', function(req, res, next) {
+	Article.find({section: req.params.section}).then(function(article){
+		res.send(article);
+	});
+});
+
+/*router.get('/article/:id', function(req, res, next) {
 	Article.findById(req.params.id).then(function(article){
 		res.send(article);
 	});
-
-});
+});*/
 
 router.post('/article', function(req, res, next) {
 	Article.create(req.body).then(function(article){
