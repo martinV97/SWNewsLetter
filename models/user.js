@@ -6,6 +6,10 @@ var UserSchema = new Schema({
 		type: String,
 		required: [true, 'Name User is required']
 	},
+	identification:{
+		type:Number,
+		required: [true, 'Password User is required']
+	},
 	password:{
 		type:String,
 		required: [true, 'Password User is required']
